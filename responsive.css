@@ -1,0 +1,203 @@
+/* ===================================
+   TRAMONTO LOUNGE - Responsive Styles
+   Mobile-first breakpoints
+   =================================== */
+
+/* --- Tablet: 1024px and below --- */
+@media (max-width: 1024px) {
+  .navbar { padding: 16px 24px; }
+  .navbar.scrolled { padding: 10px 24px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  /* Disable hero parallax on touch/tablet */
+  .hero-bg img,
+  .hero-bg video { transform: none !important; }
+  
+  .story-grid { grid-template-columns: 1fr; gap: 40px; }
+  .story-image img { height: 400px; }
+  
+  .highlights-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .highlights-grid .highlight-card:last-child {
+    grid-column: 1 / -1; max-width: 400px; margin: 0 auto; width: 100%;
+  }
+  
+  .dish-hero { grid-template-columns: 1fr 1fr; }
+  .dish-hero-img { height: 340px; }
+  .dish-hero-content { padding: 36px 32px; }
+  .dish-hero-content h3 { font-size: 1.7rem; }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+  }
+  .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+  .gallery-item:nth-child(4) { grid-column: span 1; }
+  
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  
+  .menu-items-grid { gap: 20px 40px; }
+  
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-form-wrapper { padding: 30px 20px; }
+  
+  .insta-grid { grid-template-columns: repeat(3, 1fr); }
+  .insta-item:nth-child(4), .insta-item:nth-child(5) { display: none; }
+}
+
+/* --- Mobile Large: 768px and below --- */
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+  .section-pad { padding: 70px 0; }
+  .container { padding: 0 20px; }
+  
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content .hero-sub { font-size: 1rem; margin-bottom: 28px; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn { padding: 14px 32px; width: 100%; max-width: 280px; }
+  
+  .story-grid { gap: 32px; }
+  .story-image img { height: 300px; }
+  .story-text h2 { font-size: 1.8rem; }
+  
+  .highlights-grid { grid-template-columns: 1fr; }
+  .highlights-grid .highlight-card:last-child { max-width: none; }
+  .highlight-card { padding: 36px 28px; }
+  
+  .dish-hero { grid-template-columns: 1fr; }
+  .dish-hero-img { height: 280px; }
+  .dish-hero-content { padding: 32px 24px; gap: 12px; }
+  .dish-hero-content h3 { font-size: 1.5rem; }
+  .dish-hero-desc { font-size: 0.95rem; }
+  .dish-hero-meta { flex-wrap: wrap; gap: 12px; }
+  .dishes-grid { grid-template-columns: repeat(2, 1fr); }
+  .dish-img { height: 220px; }
+  .filter-tab { padding: 8px 20px; font-size: 0.85rem; }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+  .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
+  
+  .atmosphere-content { padding: 60px 24px; }
+  
+  .reservations { padding: 70px 24px; }
+  
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  .footer-brand p { max-width: none; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  
+  .menu-items-grid { grid-template-columns: 1fr; }
+  .menu-hero { height: 40vh; min-height: 280px; }
+  .menu-page { padding: 50px 0; }
+  .menu-section { margin-bottom: 48px; }
+  
+  .cookie-banner { flex-direction: column; text-align: center; padding: 20px; }
+  
+  .lightbox-nav { width: 44px; height: 44px; font-size: 1.5rem; }
+  .lightbox-prev { left: 12px; }
+  .lightbox-next { right: 12px; }
+  
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .large-map { height: 300px; }
+
+  .reviews-summary { flex-direction: column; gap: 32px; padding: 32px; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .review-card { padding: 24px; }
+  .reviews-cta .btn { display: block; margin: 8px auto; max-width: 280px; width: 100%; }
+  /* Hide decorative illustrations that overlap content on mobile */
+  .aesthetic-decor { display: none; }
+  /* Instagram: 2 columns on mobile */
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+  .insta-item:nth-child(3), .insta-item:nth-child(4), .insta-item:nth-child(5) { display: none; }
+}
+
+/* --- Mobile Small: 480px and below --- */
+@media (max-width: 480px) {
+  html { font-size: 14px; }
+  .section-pad { padding: 56px 0; }
+  .container { padding: 0 16px; }
+  
+  .navbar { padding: 14px 16px; }
+  .nav-logo a { font-size: 1.2rem; letter-spacing: 4px; }
+  .nav-reserve { display: none; }
+  
+  .hero { min-height: 500px; }
+  .hero-content h1 { font-size: 1.7rem; }
+  .hero-content .hero-sub { font-size: 0.9rem; }
+  .scroll-indicator { bottom: 24px; }
+  
+  .section-header h2 { font-size: 1.8rem; }
+  .section-header { margin-bottom: 40px; }
+  
+  .story-image img { height: 240px; }
+  .story-text p { font-size: 0.95rem; }
+  
+  .highlight-card { padding: 28px 20px; }
+  .highlight-icon { width: 52px; height: 52px; }
+  
+  .dish-hero-img { height: 240px; }
+  .dish-hero-content { padding: 24px 20px; }
+  .dish-hero-content h3 { font-size: 1.3rem; }
+  .dish-hero-badge { font-size: 0.7rem; padding: 6px 14px; }
+  .dishes-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .dish-img { height: 200px; }
+  .dish-info { padding: 16px; }
+  .filter-tab { padding: 7px 16px; font-size: 0.8rem; }
+  .dishes-filter { gap: 6px; margin-bottom: 32px; }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+  }
+  .gallery-item:nth-child(1) { grid-column: span 1; }
+  
+  .atmosphere-content { padding: 48px 16px; }
+  .atmosphere-content h2 { font-size: 1.6rem; }
+  .atmosphere-content p { font-size: 0.95rem; }
+  
+  .reservations h2 { font-size: 1.6rem; }
+  .reservations p { font-size: 0.95rem; }
+  
+  .footer { padding: 50px 0 30px; }
+  .footer-grid { gap: 24px; }
+  
+  .menu-hero-content h1 { font-size: 1.8rem; }
+  .menu-section-title { font-size: 1.3rem; }
+  .menu-item h3 { font-size: 0.95rem; }
+  
+  .mobile-menu a { font-size: 1.5rem; }
+
+  .large-map { height: 250px; }
+  .info-icon { width: 40px; height: 40px; }
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+  .insta-item:nth-child(3), .insta-item:nth-child(4), .insta-item:nth-child(5) { display: none; }
+
+  /* Back-to-top: don't overlap cookie banner */
+  .back-to-top { bottom: 20px; right: 16px; width: 40px; height: 40px; }
+
+  /* Hero content: prevent overflow on very small screens */
+  .hero-content { padding: 0 16px; }
+  .hero-content h1 { font-size: 1.55rem; }
+}
+
+/* --- Ultra-wide: 1600px and above --- */
+@media (min-width: 1600px) {
+  :root { --max-width: 1400px; }
+  .hero-content h1 { font-size: 4rem; }
+  .gallery-grid { grid-auto-rows: 320px; }
+}
+
+/* --- 4K Displays --- */
+@media (min-width: 2560px) {
+  html { font-size: 20px; }
+  :root { --max-width: 1800px; }
+}
+
+/* --- Landscape phones --- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: 400px; }
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero-content .hero-sub { font-size: 0.85rem; margin-bottom: 20px; }
+  .scroll-indicator { display: none; }
+}

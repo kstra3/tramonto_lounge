@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.tramontolounge.com/sitemap.xml
+
+# Tramonto Lounge - Sunset Bar Restaurant Santorini
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
